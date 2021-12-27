@@ -38,11 +38,11 @@ jobs:
       run: |
         pyinstaller --onefile hello_world.py
     - name: Upload output file
-        uses: actions/upload-artifact@v2
-        with:
-          name: output-bin-file
-          path: dist/hello_world.ext
+      uses: actions/upload-artifact@v2
+      with:
+        name: output-bin-file
+        path: dist/hello_world.ext
     - name: Download a single artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: output-bin-file
+      uses: actions/download-artifact@v2
+      with:
+        name: output-bin-file
