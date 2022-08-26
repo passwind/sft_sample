@@ -3,7 +3,7 @@ name: Create and publish a Docker image for alpha version
 on:
   push:
     tags:
-    - v1.**
+    - v**-alpha
 
 env:
   REGISTRY: ghcr.io
